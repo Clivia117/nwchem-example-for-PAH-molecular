@@ -1,13 +1,11 @@
 #!/bin/bash
 
-#SBATCH -J disp-ef
+#SBATCH -J nwchem
 #SBATCH -n 20
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=lijun.pan@tuwien.ac.at
 
-module load nwchem openmpi3
+#you can change up script base on your calculator
 
-uids=`awk '{print $1}' calc_dat/ef14json_new.dat`
+uids=`awk '{print $1}' choicedxyz_mult1.dat`
 
 for uid in $uids 
 

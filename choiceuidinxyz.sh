@@ -1,4 +1,4 @@
-uids=`awk '{print $1}' ../database/uid4charge0_mult1.dat`
+uids=`awk '{print $1}' uid4charge0_mult1.dat`
 
 for uid in $uids
 

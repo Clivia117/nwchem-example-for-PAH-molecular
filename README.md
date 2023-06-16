@@ -1,6 +1,6 @@
 # nwchem-example-for-PAH-molecular
 This is a example to calculate energy and forces and dipole moment of PAH molecular by NWchem base on ase code. the PAH molecular from [NASA PAH database](https://www.astrochemistry.org/pahdb/).
-you need to install [NWchem](https://nwchemgit.github.io/Download.html?h=install) and [amespahdbpythonsuite](https://github.com/PAHdb/AmesPAHdbPythonSuite) 
+you need to install [NWchem](https://nwchemgit.github.io/Download.html?h=install) and [amespahdbpythonsuite](https://github.com/PAHdb/AmesPAHdbPythonSuite), here we only consider chagre=0.
 
 ### 1 you can download [NASA PAH database](https://www.astrochemistry.org/pahdb/), get `*.xml` file, which conclude all pah molecular.
 - running pah2xyz to change xml file to json file `pahdball_charge0.json`

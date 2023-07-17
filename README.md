@@ -5,11 +5,13 @@ you need to install [NWchem](https://nwchemgit.github.io/Download.html?h=install
 ### You can download [NASA PAH database](https://www.astrochemistry.org/pahdb/), get `*.xml` file, which conclude all pah molecular.
 - running `pah2xyz.py` to change `xml` file to json file `pahdball_charge0.json`
 - exzact xyz file from `pahdball_charge0.json` by running `pah2xyz.py`  
-### To calculated energy and forces, noto: you need to choice different `mult` for nwchem based on symmetry of PAH molecular
+### To calculated energy and forces, note: you need to choice different `mult` for nwchem based on symmetry of PAH molecular
 - running `asenwchem_ef_opt.py` by `nwchem.sh`
 ### Add more data, producing more displacement structure from original xyz
 - running `change_position.py` by `ch_pos.sh`
 ### calculate energy and forces of new data
 - running `asenwchem_ef_disp.py` by `nwchem_disp.sh`
+### convert nwchem outfile `nwo` to dataset with `json` file for `ase.read` 
+- running `nwo2json.py`
  
 

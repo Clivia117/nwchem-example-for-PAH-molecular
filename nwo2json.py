@@ -2,8 +2,8 @@ from ase.io.nwchem import read_nwchem_out
 from ase.db import connect
 import os
 
-outname=f'dataset/new/charge0_ef_disp_new.json'
-inputfile='nwchem_nwo/ef/disp/new/'
+outname=f'dir_what_you_want_to_save/anyname_you_want.json'
+inputfile='dir_of_nwo'
 db = connect(outname)
 if os.path.exists(outname):
 	os.remove(outname)
